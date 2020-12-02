@@ -1,5 +1,20 @@
 # These file extensions and directories as below will be ignored by git tracking
 
 *.o
+*.obj
+*.exe
+*.log
+*.tlog
+*.pdb
+*.ilk
+*.user
+*.filters
+*.idb
+*.suo
+*.db*
+*.ipch
+*.txt
+*.opendb
+*.recipe
 
 build-*/
