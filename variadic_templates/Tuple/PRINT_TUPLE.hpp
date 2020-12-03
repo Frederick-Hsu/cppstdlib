@@ -33,9 +33,9 @@
     template<typename... ArgTypes> std::ostream& operator<<(std::ostream& os,
                                                             const std::tuple<ArgTypes...>& tpl)
     {
-        os << "[";
+        os << "(";
         PRINT_TUPLE<0, sizeof...(ArgTypes), ArgTypes...>::print(os, tpl);
-        return os << "]";
+        return os << ")";
     }
 
     template<int IDX, int MAX, typename... ArgTypes>

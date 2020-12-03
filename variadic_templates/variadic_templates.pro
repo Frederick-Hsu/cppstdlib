@@ -11,6 +11,7 @@ SOURCES += \
 
 HEADERS += \
     Tuple/PRINT_TUPLE.hpp \
+    Tuple/tup.hpp \
     Tuple/tuple.hpp \
     my_algo.hpp \
     printf.hpp \

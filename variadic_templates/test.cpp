@@ -3,6 +3,8 @@
 #include "printf.hpp"
 #include "my_algo.hpp"
 #include "Tuple/PRINT_TUPLE.hpp"
+#include "Tuple/tuple.hpp"
+#include "Tuple/tup.hpp"
 
 #include <string>
 #include <complex>
@@ -16,6 +18,9 @@ void execute_test_cases(void)
     simulated_print_format();
     test_my_algorithms();
     test_print_tuple();
+
+    test_user_implemented_tuple();
+    test_composited_tup();
 }
 
 void print_all_arguments(void)

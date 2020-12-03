@@ -149,10 +149,12 @@
     <ClInclude Include="printf.hpp" />
     <ClInclude Include="test.hpp" />
     <ClInclude Include="Tuple\PRINT_TUPLE.hpp" />
+    <ClInclude Include="Tuple\tup.hpp" />
     <ClInclude Include="Tuple\tuple.hpp" />
     <ClInclude Include="variadic_templates.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram.cd" />
     <None Include="Tuple\print_arbitrary_list.py" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -27,14 +27,14 @@ namespace MySTL
         tuple(Head v, Tail... vtail);
         Head head();
         inherited& tail();
-    private:
+    protected:
         Head m_head;
     };
 
 /*================================================================================================*/
 
     /* Implementations: */
-    template<typename Head, typename... Tail> tuple<Head, Tail...>::tuple() : m_head(Head())
+    template<typename Head, typename... Tail> tuple<Head, Tail...>::tuple()
     {
     }
 
