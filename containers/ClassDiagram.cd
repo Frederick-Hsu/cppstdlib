@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Struct Name="MyContainers::array&lt;ElemType, Nm&gt;">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Typedef Name="MyContainers::array&lt;ElemType, Nm&gt;::value_type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>array.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="MyContainers::array&lt;ElemType, Nm&gt;::pointer" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>array.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="MyContainers::array&lt;ElemType, Nm&gt;::iterator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>array.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="MyContainers::array&lt;ElemType, Nm&gt;::reference" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>array.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="MyContainers::array&lt;ElemType, Nm&gt;::size_type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>array.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+      <Typedef Name="MyContainers::array&lt;ElemType, Nm&gt;::AT_Type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>array.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAABCAAAAAAAAAIAAAAAQAAEAAAAIgAAQAAAAAAA=</HashCode>
+      <FileName>array.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MyContainers::array_traits&lt;ElemType, Nm&gt;">
+    <Position X="4.25" Y="0.5" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Typedef Name="MyContainers::array_traits&lt;ElemType, Nm&gt;::Type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>array.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Typedef>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>array.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

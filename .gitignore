@@ -7,6 +7,8 @@
 *.tlog
 *.pdb
 *.ilk
+*.iobj
+*.ipdb
 *.user
 *.filters
 *.idb
