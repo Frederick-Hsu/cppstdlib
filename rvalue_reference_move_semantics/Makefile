@@ -8,7 +8,7 @@
 Project = rvalue_reference_move_semantics
 
 CC = g++
-CFLAGS = -Wall -pg -std=c+=17
+CFLAGS = -Wall -pg -std=c++17
 INCLUDES = 
 LIBS = 
 
@@ -18,8 +18,8 @@ ASM_EXTENSIONS = .s .asm
 
 CUR_DIR = .
 DIRS = $(shell find $(CUR_DIR) -maxdepth 5 -type d)
-SOURCES = $(foreach dir, $(DIRS), $(wildcard $(addprefix $(DIRS)/*, $(SRC_EXTENSIONS))))
-HEADERS = $(foreach dir, $(DIRS), $(wildcard $(addprefix $(DIRS)/*, $(HDR_EXTENSIONS))))
+SOURCES = $(foreach dir, $(DIRS), $(wildcard $(addprefix $(dir)/*, $(SRC_EXTENSIONS))))
+HEADERS = $(foreach dir, $(DIRS), $(wildcard $(addprefix $(dir)/*, $(HDR_EXTENSIONS))))
 OBJECTS = $(addsuffix .o, $(basename $(SOURCES)))
 
 .PHONY : all clean rebuild show

@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int main()
+int main(int argc, char* argv)
 {
     cout << "Current C++ standard no. = " << __cplusplus << endl;
     cout << "Current program is " << sizeof(void*) * 8 << "-bit." << endl;
