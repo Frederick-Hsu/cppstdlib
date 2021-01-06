@@ -1,0 +1,9 @@
+# The following file extensions and directories will be ingored by git-tracking 
+
+*.o
+*.out
+*.so*
+*.a
+*.obj
+*.exe
+*.lib
