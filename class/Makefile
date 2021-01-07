@@ -6,7 +6,7 @@
 Project = class
 
 CXXC = g++
-CXXFLAGS = -Wall -std=c++17 -g -fpermissive
+CXXFLAGS = -Wall -std=c++17 -g -fpermissive -DDEBUG -Wextra
 INCLUDES = 
 LIBS = 
 
@@ -24,33 +24,21 @@ OBJECTS = $(addsuffix .o, $(basename $(SOURCES)))
 all : $(Project)
 
 $(Project) : $(OBJECTS)
-	# "$$^ = " $^
-	# "$$@ = " $@ 
 	$(CXXC) $(CXXFLAGS) $^ -o $@ $(INCLUDES) $(LIBS)
 
 %.o : %.cpp %.hpp
-	# "$$< = " $<
-	# "$$@ = " $@
 	$(CXXC) $(CXXFLAGS) -c $< -o $@
 
 %.o : %.c %.h
-	# "$$< = " $<
-	# "$$@ = " $@
 	$(CXXC) $(CXXFLAGS) -c $< -o $@
 
 %.o : %.c++ %.h++
-	# "$$< = " $<
-	# "$$@ = " $@
 	$(CXXC) $(CXXFLAGS) -c $< -o $@
 
 %.o : %.cc %.hh
-	# "$$< = " $<
-	# "$$@ = " $@
 	$(CXXC) $(CXXFLAGS) -c $< -o $@
 
 %.o : %.cxx %.hxx
-	# "$$< = " $<
-	# "$$@ = " $@
 	$(CXXC) $(CXXFLAGS) -c $< -o $@
 
 clean :

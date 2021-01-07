@@ -1,5 +1,6 @@
 #include "Table.hh"
 
+#include <iostream>
 #include <cstring>
 #include <cstdlib>
 #include <exception>
@@ -80,6 +81,9 @@ Name::~Name()
 
 Table::Table(size_t s)
 {
+    #if defined (DEBUG)
+    std::cout << "Table::Table(" << s << ") constructor called." << std::endl;
+    #endif
     p = new Name[sz=s];
 }
 
@@ -87,6 +91,9 @@ Table::~Table()
 {
     if (p != nullptr)
     {
+    #if defined (DEBUG)
+        std::cout << "Table::~Table() destructor called.\n" << std::endl;
+    #endif
         delete [] p;
         p = nullptr;
         sz = 0;
